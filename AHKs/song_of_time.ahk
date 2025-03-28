@@ -4,8 +4,7 @@ SendMode "Input"
 SetWorkingDir A_ScriptDir
 
 ~::PlaySong()
-
-Hotkey "Esc", (*) => ExitApp()
+Esc::ExitApp()
 
 PlaySong() {
     Send("{y down}")
@@ -33,10 +32,14 @@ PlaySong() {
     Send("{y down}")
     Sleep 19
     Send("{r up}")
+    Sleep 228
+    Send("{q down}")
     Sleep 29
     Send("{y up}")
     Sleep 220
     Send("{u down}")
+    Sleep 27
+    Send("{q up}")
     Sleep 485
     Send("{t down}")
     Sleep 19
@@ -97,10 +100,14 @@ PlaySong() {
     Send("{y down}")
     Sleep 19
     Send("{r up}")
+    Sleep 228
+    Send("{q down}")
     Sleep 29
     Send("{y up}")
     Sleep 220
     Send("{u down}")
+    Sleep 27
+    Send("{q up}")
     Sleep 485
     Send("{t down}")
     Sleep 19

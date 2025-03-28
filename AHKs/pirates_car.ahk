@@ -4,8 +4,7 @@ SendMode "Input"
 SetWorkingDir A_ScriptDir
 
 ~::PlaySong()
-
-Hotkey "Esc", (*) => ExitApp()
+Esc::ExitApp()
 
 PlaySong() {
     Send("{w down}")
@@ -81,6 +80,8 @@ PlaySong() {
     Send("{w up}")
     Sleep 3
     Send("{w down}")
+    Send("{x down}")
+    Send("{x down}")
     Sleep 250
     Send("{w up}")
     Sleep 50
@@ -93,18 +94,28 @@ PlaySong() {
     Send("{w up}")
     Sleep 50
     Send("{w down}")
+    Sleep 75
+    Send("{x up}")
+    Send("{x up}")
     Sleep 72
     Send("{w up}")
     Sleep 3
     Send("{w down}")
+    Send("{x down}")
+    Send("{x down}")
     Sleep 250
     Send("{w up}")
     Sleep 50
     Send("{w down}")
+    Sleep 100
+    Send("{x up}")
+    Send("{x up}")
     Sleep 47
     Send("{w up}")
     Sleep 3
     Send("{w down}")
+    Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{w up}")
     Sleep 3
@@ -113,6 +124,9 @@ PlaySong() {
     Send("{n up}")
     Sleep 3
     Send("{q down}")
+    Sleep 100
+    Send("{x up}")
+    Send("{x up}")
     Sleep 47
     Send("{q up}")
     Sleep 3
@@ -120,17 +134,24 @@ PlaySong() {
     Send("{n down}")
     Send("{w down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 250
     Send("{v up}")
     Send("{n up}")
     Send("{w up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 50
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{v up}")
@@ -140,6 +161,8 @@ PlaySong() {
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{v up}")
@@ -150,16 +173,38 @@ PlaySong() {
     Send("{q down}")
     Send("{e down}")
     Send("{z down}")
+    Send("{z down}")
     Sleep 147
     Send("{n up}")
     Send("{q up}")
     Send("{e up}")
     Send("{z up}")
+    Send("{z up}")
     Sleep 3
     Send("{j down}")
     Send("{w down}")
     Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
+    Send("{j up}")
+    Send("{w up}")
+    Send("{r up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 50
+    Send("{j down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 100
     Send("{j up}")
     Send("{w up}")
     Send("{r up}")
@@ -169,12 +214,7 @@ PlaySong() {
     Send("{r down}")
     Sleep 100
     Send("{j up}")
-    Send("{w up}")
-    Send("{r up}")
-    Sleep 50
-    Send("{j down}")
-    Send("{w down}")
-    Send("{r down}")
+    Send("{j up}")
     Sleep 47
     Send("{j up}")
     Send("{w up}")
@@ -182,21 +222,37 @@ PlaySong() {
     Sleep 3
     Send("{w down}")
     Send("{t down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 147
     Send("{w up}")
     Send("{t up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 3
     Send("{n down}")
     Send("{q down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{n up}")
     Send("{q up}")
     Send("{e up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
     Send("{n down}")
     Send("{q down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{n up}")
     Send("{q up}")
@@ -204,18 +260,26 @@ PlaySong() {
     Sleep 50
     Send("{n down}")
     Send("{w down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{n up}")
     Send("{w up}")
     Sleep 3
     Send("{b down}")
     Send("{q down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{b up}")
     Send("{q up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{n down}")
     Send("{q down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 147
     Send("{n up}")
@@ -223,36 +287,60 @@ PlaySong() {
     Sleep 3
     Send("{n down}")
     Send("{w down}")
+    Sleep 100
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{n up}")
     Send("{w up}")
+    Sleep 47
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{n down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{n up}")
     Sleep 3
     Send("{q down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{q up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{v down}")
     Send("{j down}")
     Send("{w down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{v up}")
     Send("{j up}")
     Send("{w up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 50
     Send("{v down}")
     Send("{j down}")
     Send("{w down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{v up}")
     Send("{j up}")
@@ -260,27 +348,46 @@ PlaySong() {
     Sleep 50
     Send("{j down}")
     Send("{w down}")
+    Sleep 100
+    Send("{j up}")
+    Send("{j up}")
     Sleep 47
     Send("{j up}")
     Send("{w up}")
     Sleep 3
     Send("{j down}")
     Send("{e down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 147
     Send("{j up}")
     Send("{e up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 3
     Send("{n down}")
     Send("{q down}")
     Send("{r down}")
+    Send("{v down}")
+    Send("{v down}")
     Sleep 250
     Send("{n up}")
     Send("{q up}")
     Send("{r up}")
+    Send("{v up}")
+    Send("{v up}")
     Sleep 50
     Send("{n down}")
     Send("{q down}")
     Send("{r down}")
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
+    Send("{v down}")
     Sleep 100
     Send("{n up}")
     Send("{q up}")
@@ -288,81 +395,122 @@ PlaySong() {
     Sleep 50
     Send("{q down}")
     Send("{r down}")
+    Sleep 100
+    Send("{v up}")
+    Send("{v up}")
     Sleep 47
     Send("{q up}")
     Send("{r up}")
     Sleep 3
     Send("{q down}")
     Send("{t down}")
+    Send("{v down}")
+    Send("{v down}")
     Sleep 147
     Send("{q up}")
     Send("{t up}")
+    Send("{v up}")
+    Send("{v up}")
     Sleep 3
     Send("{q down}")
     Send("{e down}")
+    Send("{z down}")
     Send("{z down}")
     Sleep 250
     Send("{q up}")
     Send("{e up}")
     Send("{z up}")
+    Send("{z up}")
     Sleep 50
     Send("{q down}")
     Send("{e down}")
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
     Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{q up}")
     Send("{e up}")
     Sleep 50
     Send("{n down}")
     Send("{w down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{n up}")
     Send("{w up}")
     Sleep 3
     Send("{q down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{q up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{v up}")
     Send("{n up}")
     Send("{w up}")
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 50
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{n down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{n up}")
     Sleep 3
     Send("{q down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{q up}")
     Send("{x up}")
+    Send("{x up}")
     Sleep 3
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{v up}")
     Send("{n up}")
     Send("{w up}")
     Send("{x up}")
+    Send("{x up}")
     Sleep 50
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{v up}")
@@ -371,6 +519,8 @@ PlaySong() {
     Sleep 50
     Send("{n down}")
     Send("{w down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{n up}")
@@ -379,22 +529,36 @@ PlaySong() {
     Send("{n down}")
     Send("{r down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{n up}")
     Send("{r up}")
     Send("{x up}")
+    Send("{x up}")
     Sleep 3
     Send("{j down}")
     Send("{w down}")
     Send("{t down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{j up}")
     Send("{w up}")
     Send("{t up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 50
     Send("{j down}")
     Send("{w down}")
     Send("{t down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{j up}")
     Send("{w up}")
@@ -402,27 +566,46 @@ PlaySong() {
     Sleep 50
     Send("{w down}")
     Send("{t down}")
+    Sleep 100
+    Send("{j up}")
+    Send("{j up}")
     Sleep 47
     Send("{w up}")
     Send("{t up}")
     Sleep 3
     Send("{w down}")
     Send("{y down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 147
     Send("{w up}")
     Send("{y up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 3
     Send("{w down}")
     Send("{t down}")
     Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
     Sleep 250
     Send("{w up}")
     Send("{t up}")
     Send("{7 up}")
+    Send("{b up}")
+    Send("{b up}")
     Sleep 50
     Send("{w down}")
     Send("{t down}")
     Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
     Sleep 100
     Send("{w up}")
     Send("{t up}")
@@ -430,53 +613,85 @@ PlaySong() {
     Sleep 50
     Send("{r down}")
     Send("{y down}")
+    Sleep 100
+    Send("{b up}")
+    Send("{b up}")
     Sleep 47
     Send("{r up}")
     Send("{y up}")
     Sleep 3
     Send("{e down}")
     Send("{t down}")
+    Send("{b down}")
+    Send("{b down}")
     Sleep 147
     Send("{e up}")
     Send("{t up}")
+    Send("{b up}")
+    Send("{b up}")
     Sleep 3
     Send("{r down}")
     Send("{y down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 147
     Send("{r up}")
     Send("{y up}")
     Sleep 3
     Send("{w down}")
+    Sleep 100
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{w up}")
+    Sleep 47
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{w down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{w up}")
     Sleep 3
     Send("{e down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{e up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{j down}")
     Send("{w down}")
     Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{j up}")
     Send("{w up}")
     Send("{r up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 50
     Send("{j down}")
     Send("{w down}")
     Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{j up}")
     Send("{w up}")
@@ -487,46 +702,80 @@ PlaySong() {
     Send("{t down}")
     Sleep 100
     Send("{j up}")
+    Send("{j up}")
+    Sleep 50
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 100
+    Send("{j up}")
     Send("{w up}")
     Send("{t up}")
+    Sleep 47
+    Send("{j up}")
+    Send("{j up}")
     Sleep 3
     Send("{r down}")
     Send("{y down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 147
     Send("{r up}")
     Send("{y up}")
     Sleep 3
     Send("{w down}")
+    Sleep 100
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{w up}")
+    Sleep 47
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{w down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{w up}")
     Sleep 3
     Send("{r down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{r up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{n down}")
     Send("{2 down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{n up}")
     Send("{2 up}")
     Send("{e up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
     Send("{n down}")
     Send("{2 down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{n up}")
     Send("{2 up}")
@@ -534,284 +783,937 @@ PlaySong() {
     Sleep 50
     Send("{w down}")
     Send("{r down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{w up}")
     Send("{r up}")
     Sleep 3
     Send("{m down}")
     Send("{w down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{m up}")
     Send("{w up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{n down}")
     Send("{2 down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{n up}")
     Send("{2 up}")
     Send("{e up}")
+    Sleep 103
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 150
     Send("{y down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{y up}")
     Sleep 3
+    Send("{q down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{q up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
     Send("{r down}")
     Send("{y down}")
+    Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 50
     Send("{r down}")
     Send("{y down}")
+    Send("{w down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
     Sleep 50
     Send("{r down}")
     Send("{y down}")
+    Send("{w down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
     Sleep 3
     Send("{y down}")
+    Send("{q down}")
+    Send("{e down}")
+    Send("{z down}")
     Send("{z down}")
     Sleep 147
     Send("{y up}")
+    Send("{q up}")
+    Send("{e up}")
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{7 down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{7 up}")
+    Send("{w up}")
+    Send("{r up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 50
     Send("{7 down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{7 up}")
+    Send("{w up}")
+    Send("{r up}")
     Sleep 50
     Send("{7 down}")
+    Send("{w down}")
+    Send("{r down}")
+    Sleep 100
+    Send("{j up}")
+    Send("{j up}")
     Sleep 47
     Send("{7 up}")
+    Send("{w up}")
+    Send("{r up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{t down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{t up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 3
     Send("{y down}")
+    Send("{q down}")
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{y up}")
+    Send("{q up}")
+    Send("{e up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
     Send("{y down}")
+    Send("{q down}")
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{y up}")
+    Send("{q up}")
+    Send("{e up}")
     Sleep 50
     Send("{y down}")
+    Send("{w down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{y up}")
+    Send("{w up}")
     Sleep 3
     Send("{t down}")
+    Send("{q down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{t up}")
+    Send("{q up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{y down}")
+    Send("{q down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 147
     Send("{y up}")
+    Send("{q up}")
     Sleep 3
     Send("{y down}")
+    Send("{w down}")
+    Sleep 100
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{y up}")
+    Send("{w up}")
+    Sleep 47
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{y down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{y up}")
+    Sleep 3
+    Send("{q down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{q up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{r down}")
     Send("{7 down}")
+    Send("{w down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{r up}")
     Send("{7 up}")
+    Send("{w up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 50
     Send("{r down}")
     Send("{7 down}")
+    Send("{w down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{r up}")
     Send("{7 up}")
+    Send("{w up}")
     Sleep 50
     Send("{7 down}")
+    Send("{w down}")
+    Sleep 100
+    Send("{j up}")
+    Send("{j up}")
     Sleep 47
     Send("{7 up}")
+    Send("{w up}")
     Sleep 3
     Send("{7 down}")
+    Send("{e down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 147
     Send("{7 up}")
+    Send("{e up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 3
     Send("{y down}")
+    Send("{q down}")
+    Send("{r down}")
+    Send("{v down}")
+    Send("{v down}")
     Sleep 250
     Send("{y up}")
+    Send("{q up}")
+    Send("{r up}")
+    Send("{v up}")
+    Send("{v up}")
     Sleep 50
     Send("{y down}")
+    Send("{q down}")
+    Send("{r down}")
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
+    Send("{v down}")
     Sleep 100
     Send("{y up}")
+    Send("{q up}")
+    Send("{r up}")
+    Sleep 50
+    Send("{q down}")
+    Send("{r down}")
+    Sleep 100
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 47
+    Send("{q up}")
+    Send("{r up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{t down}")
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{q up}")
+    Send("{t up}")
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{e down}")
     Send("{z down}")
+    Send("{z down}")
+    Sleep 250
+    Send("{q up}")
+    Send("{e up}")
     Send("{z up}")
-    Send("{z down}")
     Send("{z up}")
     Sleep 50
+    Send("{q down}")
+    Send("{e down}")
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{e up}")
+    Sleep 50
     Send("{y down}")
+    Send("{w down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{y up}")
+    Send("{w up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{q up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{r down}")
     Send("{y down}")
+    Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{y down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{y up}")
+    Sleep 3
+    Send("{q down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{q up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{r down}")
     Send("{y down}")
+    Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 50
     Send("{r down}")
     Send("{y down}")
+    Send("{w down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
     Sleep 50
     Send("{y down}")
+    Send("{w down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{y up}")
+    Send("{w up}")
     Sleep 3
     Send("{y down}")
+    Send("{r down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 147
     Send("{y up}")
+    Send("{r up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{7 down}")
+    Send("{w down}")
+    Send("{t down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{7 up}")
+    Send("{w up}")
+    Send("{t up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 50
     Send("{7 down}")
+    Send("{w down}")
+    Send("{t down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{7 up}")
+    Send("{w up}")
+    Send("{t up}")
+    Sleep 50
+    Send("{w down}")
+    Send("{t down}")
+    Sleep 100
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 47
+    Send("{w up}")
+    Send("{t up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{y down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{y up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{t down}")
+    Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 250
+    Send("{w up}")
+    Send("{t up}")
+    Send("{7 up}")
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 50
+    Send("{w down}")
+    Send("{t down}")
+    Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 100
+    Send("{w up}")
+    Send("{t up}")
+    Send("{7 up}")
+    Sleep 50
+    Send("{r down}")
+    Send("{y down}")
+    Sleep 100
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 47
+    Send("{r up}")
+    Send("{y up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{t down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{t up}")
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{y down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{r up}")
+    Send("{y up}")
+    Sleep 3
+    Send("{w down}")
+    Sleep 100
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 50
     Send("{x down}")
+    Send("{x down}")
+    Sleep 100
+    Send("{w up}")
+    Sleep 47
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 150
+    Send("{w down}")
+    Sleep 100
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 47
+    Send("{w up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{7 down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{7 up}")
+    Send("{w up}")
+    Send("{r up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 50
     Send("{7 down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{7 up}")
+    Send("{w up}")
+    Send("{r up}")
     Sleep 50
     Send("{7 down}")
+    Send("{w down}")
+    Send("{t down}")
+    Sleep 100
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 50
+    Send("{j down}")
+    Send("{j down}")
     Sleep 100
     Send("{7 up}")
+    Send("{w up}")
+    Send("{t up}")
+    Sleep 47
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{y down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{r up}")
+    Send("{y up}")
+    Sleep 3
+    Send("{w down}")
+    Sleep 100
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 50
     Send("{x down}")
+    Send("{x down}")
+    Sleep 100
+    Send("{w up}")
+    Sleep 47
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 150
+    Send("{w down}")
+    Sleep 100
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 47
+    Send("{w up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{r up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{y down}")
+    Send("{2 down}")
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{y up}")
+    Send("{2 up}")
+    Send("{e up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
     Send("{y down}")
+    Send("{2 down}")
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{y up}")
+    Send("{2 up}")
+    Send("{e up}")
+    Sleep 50
+    Send("{w down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 47
+    Send("{w up}")
+    Sleep 3
+    Send("{2 down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{2 up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{y down}")
+    Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{y up}")
+    Send("{w up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 50
     Send("{y down}")
+    Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{y up}")
+    Send("{w up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 50
     Send("{y down}")
+    Send("{q down}")
+    Send("{e down}")
+    Send("{z down}")
     Send("{z down}")
     Sleep 250
     Send("{y up}")
+    Send("{q up}")
+    Send("{e up}")
     Send("{z up}")
+    Send("{z up}")
+    Sleep 50
+    Send("{q down}")
+    Send("{w down}")
+    Send("{r down}")
     Send("{z down}")
-    Send("{z up}")
     Send("{z down}")
+    Sleep 250
+    Send("{q up}")
+    Send("{w up}")
+    Send("{r up}")
     Send("{z up}")
+    Send("{z up}")
+    Sleep 50
+    Send("{r down}")
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{r up}")
+    Sleep 3
+    Send("{r down}")
+    Sleep 100
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 47
+    Send("{r up}")
     Sleep 3
     Send("{7 down}")
+    Send("{w down}")
+    Send("{t down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{7 up}")
+    Send("{w up}")
+    Send("{t up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 50
+    Send("{w down}")
+    Send("{y down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{y up}")
+    Sleep 3
+    Send("{r down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 47
+    Send("{r up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 150
     Send("{y down}")
+    Send("{r down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{y up}")
+    Send("{r up}")
     Sleep 3
     Send("{y down}")
+    Send("{w down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{y up}")
+    Send("{w up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{y down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{y up}")
+    Sleep 103
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 250
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{t down}")
+    Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{t up}")
+    Send("{7 up}")
+    Sleep 103
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 50
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
     Sleep 150
     Send("{7 down}")
+    Send("{t down}")
+    Sleep 100
+    Send("{b up}")
+    Send("{b up}")
     Sleep 47
     Send("{7 up}")
+    Send("{t up}")
     Sleep 3
     Send("{7 down}")
+    Send("{w down}")
+    Send("{b down}")
+    Send("{b down}")
     Sleep 147
     Send("{7 up}")
+    Send("{w up}")
+    Send("{b up}")
+    Send("{b up}")
     Sleep 3
     Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
     Sleep 147
     Send("{7 up}")
+    Sleep 103
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 50
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 250
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 50
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
     Sleep 3
     Send("{2 down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{2 up}")
     Send("{e up}")
@@ -819,46 +1721,94 @@ PlaySong() {
     Send("{2 down}")
     Send("{e down}")
     Sleep 100
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 100
     Send("{2 up}")
     Send("{e up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{b down}")
     Send("{w down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 250
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{b up}")
     Send("{w up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{n down}")
     Send("{2 down}")
     Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 250
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{n up}")
     Send("{2 up}")
     Send("{r up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 150
     Send("{r down}")
+    Sleep 100
+    Send("{n up}")
+    Send("{n up}")
     Sleep 47
     Send("{r up}")
     Sleep 3
     Send("{t down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 147
     Send("{t up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{w up}")
     Send("{r up}")
     Send("{y up}")
     Send("{x up}")
+    Send("{x up}")
     Sleep 50
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{w up}")
@@ -868,17 +1818,24 @@ PlaySong() {
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
+    Sleep 100
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{w up}")
     Send("{r up}")
     Send("{y up}")
+    Sleep 47
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{w down}")
     Send("{r down}")
     Send("{7 down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 147
     Send("{w up}")
@@ -888,35 +1845,60 @@ PlaySong() {
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{w up}")
     Send("{r up}")
     Send("{y up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{q down}")
     Send("{e down}")
     Send("{t down}")
+    Send("{z down}")
     Send("{z down}")
     Sleep 250
     Send("{q up}")
     Send("{e up}")
     Send("{t up}")
     Send("{z up}")
+    Send("{z up}")
     Sleep 50
     Send("{q down}")
     Send("{e down}")
     Send("{t down}")
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
     Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
     Send("{z down}")
     Sleep 100
     Send("{q up}")
@@ -926,17 +1908,24 @@ PlaySong() {
     Send("{q down}")
     Send("{e down}")
     Send("{t down}")
+    Sleep 100
     Send("{z up}")
+    Send("{z up}")
+    Sleep 50
+    Send("{z down}")
     Send("{z down}")
     Sleep 100
     Send("{q up}")
     Send("{e up}")
     Send("{t up}")
+    Sleep 47
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{q down}")
     Send("{e down}")
     Send("{t down}")
+    Send("{v down}")
     Send("{v down}")
     Sleep 147
     Send("{q up}")
@@ -946,35 +1935,60 @@ PlaySong() {
     Send("{q down}")
     Send("{r down}")
     Send("{y down}")
+    Sleep 100
+    Send("{v up}")
     Send("{v up}")
     Sleep 47
     Send("{q up}")
     Send("{r up}")
     Send("{y up}")
+    Sleep 3
     Send("{v down}")
+    Send("{v down}")
+    Sleep 147
     Send("{v up}")
-    Send("{v down}")
     Send("{v up}")
+    Sleep 3
     Send("{v down}")
+    Send("{v down}")
+    Sleep 147
     Send("{v up}")
+    Send("{v up}")
+    Sleep 3
     Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
     Send("{v up}")
     Sleep 3
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{w up}")
     Send("{r up}")
     Send("{y up}")
     Send("{x up}")
+    Send("{x up}")
     Sleep 50
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{w up}")
@@ -984,17 +1998,24 @@ PlaySong() {
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
+    Sleep 100
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{w up}")
     Send("{r up}")
     Send("{y up}")
+    Sleep 47
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{w down}")
     Send("{r down}")
     Send("{7 down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 147
     Send("{w up}")
@@ -1004,30 +2025,60 @@ PlaySong() {
     Send("{w down}")
     Send("{r down}")
     Send("{y down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{w up}")
     Send("{r up}")
     Send("{y up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{2 down}")
     Send("{e down}")
     Send("{t down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{2 up}")
     Send("{e up}")
     Send("{t up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
     Send("{2 down}")
     Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{2 up}")
     Send("{r up}")
@@ -1036,39 +2087,69 @@ PlaySong() {
     Send("{e down}")
     Sleep 100
     Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 100
+    Send("{n up}")
     Send("{e up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{v up}")
     Send("{n up}")
     Send("{w up}")
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 50
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{w down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{w up}")
     Sleep 3
     Send("{e down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{e up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{n down}")
     Send("{w down}")
     Send("{r down}")
     Send("{x down}")
-    Send("{x up}")
     Send("{x down}")
+    Sleep 250
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 75
     Send("{n up}")
@@ -1076,397 +2157,1296 @@ PlaySong() {
     Send("{r up}")
     Sleep 75
     Send("{t down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{t up}")
     Sleep 3
     Send("{y down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{y up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{q down}")
     Send("{t down}")
     Send("{z down}")
+    Send("{z down}")
     Sleep 250
     Send("{q up}")
     Send("{t up}")
+    Send("{z up}")
     Send("{z up}")
     Sleep 50
     Send("{q down}")
     Send("{r down}")
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
     Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
     Send("{z down}")
     Sleep 100
     Send("{q up}")
     Send("{r up}")
+    Sleep 47
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{q down}")
     Send("{e down}")
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
     Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
     Send("{z down}")
     Sleep 100
     Send("{q up}")
     Send("{e up}")
+    Sleep 47
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{n down}")
     Send("{q down}")
     Send("{r down}")
     Send("{v down}")
+    Send("{v down}")
     Sleep 250
     Send("{n up}")
     Send("{q up}")
     Send("{r up}")
+    Send("{v up}")
     Send("{v up}")
     Sleep 50
     Send("{n down}")
     Send("{q down}")
     Send("{t down}")
     Send("{v down}")
+    Send("{v down}")
+    Sleep 147
     Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
     Send("{v down}")
     Sleep 100
     Send("{n up}")
     Send("{q up}")
     Send("{t up}")
+    Sleep 47
+    Send("{v up}")
     Send("{v up}")
     Sleep 3
     Send("{n down}")
     Send("{q down}")
     Send("{y down}")
     Send("{v down}")
+    Send("{v down}")
+    Sleep 147
     Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
     Send("{v down}")
     Sleep 100
     Send("{n up}")
     Send("{q up}")
     Send("{y up}")
+    Sleep 47
+    Send("{v up}")
     Send("{v up}")
     Sleep 3
     Send("{q down}")
     Send("{e down}")
     Send("{t down}")
     Send("{z down}")
+    Send("{z down}")
     Sleep 250
     Send("{q up}")
     Send("{e up}")
     Send("{t up}")
     Send("{z up}")
-    Send("{z down}")
     Send("{z up}")
+    Sleep 50
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{r down}")
     Send("{z down}")
+    Send("{z down}")
     Sleep 147
     Send("{r up}")
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{t down}")
     Send("{z down}")
+    Send("{z down}")
     Sleep 147
     Send("{t up}")
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{q down}")
     Send("{r down}")
     Send("{y down}")
     Send("{v down}")
+    Send("{v down}")
     Sleep 250
     Send("{q up}")
     Send("{r up}")
     Send("{y up}")
     Send("{v up}")
-    Send("{v down}")
     Send("{v up}")
+    Sleep 50
     Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
     Send("{v up}")
     Sleep 3
     Send("{t down}")
     Send("{v down}")
+    Send("{v down}")
     Sleep 147
     Send("{t up}")
+    Send("{v up}")
     Send("{v up}")
     Sleep 3
     Send("{r down}")
     Send("{v down}")
+    Send("{v down}")
     Sleep 147
     Send("{r up}")
+    Send("{v up}")
     Send("{v up}")
     Sleep 3
     Send("{2 down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{2 up}")
     Send("{e up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
     Send("{2 down}")
     Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{2 up}")
     Send("{r up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{2 down}")
     Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{2 up}")
     Send("{e up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{v up}")
     Send("{n up}")
     Send("{w up}")
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 50
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 150
     Send("{e down}")
+    Sleep 100
+    Send("{x up}")
     Send("{x up}")
     Sleep 47
     Send("{e up}")
     Sleep 3
     Send("{q down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{q up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{v down}")
     Send("{n down}")
     Send("{w down}")
     Send("{x down}")
+    Send("{x down}")
     Sleep 147
     Send("{v up}")
     Send("{n up}")
     Send("{w up}")
+    Sleep 103
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 50
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{y down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{y up}")
+    Send("{w up}")
+    Send("{r up}")
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
     Send("{x down}")
-    Send("{x up}")
     Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
     Send("{x down}")
-    Send("{x up}")
     Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{r up}")
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{t down}")
     Send("{z down}")
-    Send("{z up}")
     Send("{z down}")
+    Sleep 250
+    Send("{q up}")
+    Send("{t up}")
     Send("{z up}")
+    Send("{z up}")
+    Sleep 50
+    Send("{q down}")
+    Send("{r down}")
     Send("{z down}")
-    Send("{z up}")
     Send("{z down}")
+    Sleep 147
     Send("{z up}")
+    Send("{z up}")
+    Sleep 3
     Send("{z down}")
+    Send("{z down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{r up}")
+    Sleep 47
     Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{t down}")
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{t up}")
+    Sleep 47
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{y down}")
     Send("{v down}")
+    Send("{v down}")
+    Sleep 250
+    Send("{r up}")
+    Send("{y up}")
     Send("{v up}")
-    Send("{v down}")
     Send("{v up}")
+    Sleep 50
+    Send("{q down}")
+    Send("{t down}")
     Send("{v down}")
+    Send("{v down}")
+    Sleep 147
     Send("{v up}")
-    Send("{v down}")
     Send("{v up}")
+    Sleep 3
     Send("{v down}")
+    Send("{v down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{t up}")
+    Sleep 47
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{r down}")
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{r up}")
+    Sleep 47
+    Send("{v up}")
     Send("{v up}")
     Sleep 3
     Send("{r down}")
     Send("{7 down}")
+    Send("{w down}")
+    Send("{j down}")
+    Send("{j down}")
     Sleep 250
     Send("{r up}")
     Send("{7 up}")
+    Send("{w up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 50
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{j up}")
+    Send("{j up}")
     Sleep 3
     Send("{y down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 250
     Send("{y up}")
+    Send("{w up}")
+    Send("{r up}")
+    Send("{x up}")
     Send("{x up}")
     Sleep 50
     Send("{y down}")
+    Send("{w down}")
+    Send("{t down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{y up}")
+    Send("{w up}")
+    Send("{t up}")
+    Sleep 47
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{y down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 100
+    Send("{w up}")
+    Send("{y up}")
+    Sleep 47
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{7 down}")
+    Send("{w down}")
+    Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
     Sleep 250
     Send("{7 up}")
+    Send("{w up}")
+    Send("{7 up}")
+    Send("{b up}")
+    Send("{b up}")
     Sleep 50
     Send("{7 down}")
+    Send("{w down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
     Sleep 100
     Send("{7 up}")
+    Send("{w up}")
+    Sleep 47
+    Send("{b up}")
+    Send("{b up}")
     Sleep 3
     Send("{7 down}")
+    Send("{t down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
     Sleep 100
     Send("{7 up}")
+    Send("{t up}")
+    Sleep 47
+    Send("{b up}")
+    Send("{b up}")
     Sleep 3
     Send("{y down}")
+    Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{y up}")
-    Sleep 3
-    Send("{y down}")
-    Sleep 250
-    Send("{y up}")
-    Send("{x down}")
-    Send("{x up}")
-    Send("{x down}")
-    Send("{x up}")
-    Send("{x down}")
-    Send("{x up}")
-    Send("{x down}")
-    Send("{x up}")
-    Send("{x down}")
-    Send("{x up}")
-    Send("{v down}")
-    Send("{v up}")
-    Send("{v down}")
-    Send("{v up}")
-    Send("{v down}")
-    Send("{v up}")
-    Send("{v down}")
-    Send("{v up}")
-    Send("{z down}")
-    Send("{z up}")
-    Send("{z down}")
-    Send("{z up}")
-    Send("{z down}")
-    Send("{z up}")
-    Send("{z down}")
-    Send("{z up}")
-    Send("{z down}")
-    Send("{z up}")
-    Sleep 3
-    Send("{7 down}")
-    Sleep 250
-    Send("{7 up}")
-    Sleep 3
-    Send("{y down}")
-    Sleep 250
-    Send("{y up}")
-    Sleep 3
-    Send("{y down}")
-    Sleep 250
-    Send("{y up}")
+    Send("{r up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
-    Send("{y down}")
-    Sleep 100
-    Send("{y up}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{t down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{t up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{y down}")
-    Sleep 100
+    Send("{w down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 250
     Send("{y up}")
+    Send("{w up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{2 down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{2 up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{w down}")
     Send("{r down}")
     Send("{y down}")
     Send("{x down}")
+    Send("{x down}")
+    Sleep 250
+    Send("{w up}")
+    Send("{r up}")
+    Send("{y up}")
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{t down}")
+    Send("{7 down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 250
+    Send("{w up}")
+    Send("{t up}")
+    Send("{7 up}")
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 50
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{r down}")
+    Send("{y down}")
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 250
+    Send("{q up}")
+    Send("{r up}")
+    Send("{y up}")
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 50
+    Send("{q down}")
+    Send("{r down}")
+    Send("{y down}")
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{r up}")
+    Send("{y up}")
+    Sleep 50
+    Send("{q down}")
+    Send("{r down}")
+    Send("{y down}")
+    Sleep 100
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 50
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{r up}")
+    Send("{y up}")
+    Sleep 47
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{e down}")
+    Send("{y down}")
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{q up}")
+    Send("{e up}")
+    Send("{y up}")
+    Sleep 3
+    Send("{t down}")
+    Sleep 100
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 47
+    Send("{t up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{7 down}")
+    Send("{w down}")
+    Send("{t down}")
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 250
+    Send("{7 up}")
+    Send("{w up}")
+    Send("{t up}")
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 50
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{y down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 250
+    Send("{y up}")
+    Send("{w up}")
+    Send("{r up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{y down}")
+    Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 250
+    Send("{y up}")
+    Send("{r up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{y down}")
+    Send("{t down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 100
+    Send("{y up}")
+    Send("{t up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{y down}")
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 100
+    Send("{y up}")
+    Send("{e up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{y down}")
+    Send("{w down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 250
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
     Send("{x down}")
     Sleep 100
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
+    Sleep 47
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{w down}")
     Send("{x down}")
-    Send("{x up}")
     Send("{x down}")
+    Sleep 147
+    Send("{w up}")
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{e down}")
     Send("{x down}")
-    Send("{x up}")
     Send("{x down}")
+    Sleep 147
+    Send("{e up}")
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{r down}")
     Send("{x down}")
-    Send("{x up}")
     Send("{x down}")
+    Sleep 147
+    Send("{r up}")
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{r down}")
+    Send("{y down}")
     Send("{x down}")
-    Send("{x up}")
     Send("{x down}")
+    Sleep 250
     Send("{x up}")
+    Send("{x up}")
+    Sleep 50
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 100
+    Send("{w up}")
+    Send("{r up}")
+    Send("{y up}")
+    Sleep 47
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{r up}")
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{r down}")
+    Send("{7 down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 250
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 50
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 100
+    Send("{w up}")
+    Send("{r up}")
+    Send("{7 up}")
+    Sleep 47
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{w down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{w up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{e down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{e up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{j down}")
+    Send("{j down}")
+    Sleep 147
+    Send("{r up}")
+    Send("{j up}")
+    Send("{j up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{r down}")
+    Send("{y down}")
     Send("{v down}")
-    Send("{v up}")
     Send("{v down}")
+    Sleep 250
+    Send("{q up}")
+    Send("{r up}")
+    Send("{y up}")
     Send("{v up}")
+    Send("{v up}")
+    Sleep 50
+    Send("{q down}")
+    Send("{r down}")
+    Send("{y down}")
     Send("{v down}")
-    Send("{v up}")
     Send("{v down}")
+    Sleep 147
     Send("{v up}")
+    Send("{v up}")
+    Sleep 3
     Send("{v down}")
+    Send("{v down}")
+    Sleep 100
+    Send("{q up}")
+    Send("{r up}")
+    Send("{y up}")
+    Sleep 47
     Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{r down}")
+    Send("{q down}")
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 147
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{v down}")
+    Send("{v down}")
+    Sleep 100
+    Send("{r up}")
+    Send("{q up}")
+    Sleep 47
+    Send("{v up}")
+    Send("{v up}")
+    Sleep 3
+    Send("{q down}")
+    Send("{e down}")
+    Send("{y down}")
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{q up}")
+    Send("{e up}")
+    Send("{y up}")
+    Sleep 3
+    Send("{t down}")
+    Sleep 100
     Send("{z up}")
-    Send("{z down}")
     Send("{z up}")
+    Sleep 47
+    Send("{t up}")
+    Sleep 3
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
     Send("{z up}")
-    Send("{z down}")
     Send("{z up}")
+    Sleep 3
     Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
+    Send("{z up}")
+    Sleep 3
+    Send("{z down}")
+    Send("{z down}")
+    Sleep 147
+    Send("{z up}")
     Send("{z up}")
     Sleep 3
     Send("{7 down}")
+    Send("{w down}")
+    Send("{t down}")
+    Send("{b down}")
+    Send("{b down}")
     Sleep 250
     Send("{7 up}")
+    Send("{w up}")
+    Send("{t up}")
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 50
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
+    Sleep 3
+    Send("{b down}")
+    Send("{b down}")
+    Sleep 147
+    Send("{b up}")
+    Send("{b up}")
     Sleep 3
     Send("{y down}")
+    Send("{w down}")
+    Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{y up}")
+    Send("{w up}")
+    Send("{r up}")
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 50
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{y down}")
+    Send("{r down}")
+    Send("{n down}")
+    Send("{n down}")
     Sleep 250
     Send("{y up}")
+    Send("{r up}")
+    Send("{n up}")
+    Send("{n up}")
     Sleep 50
     Send("{y down}")
+    Send("{t down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{y up}")
+    Send("{t up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{y down}")
+    Send("{e down}")
+    Send("{n down}")
+    Send("{n down}")
+    Sleep 147
+    Send("{n up}")
+    Send("{n up}")
+    Sleep 3
+    Send("{n down}")
+    Send("{n down}")
     Sleep 100
     Send("{y up}")
+    Send("{e up}")
+    Sleep 47
+    Send("{n up}")
+    Send("{n up}")
     Sleep 3
     Send("{r down}")
     Send("{y down}")
+    Send("{w down}")
+    Send("{x down}")
     Send("{x down}")
     Sleep 400
     Send("{r up}")
     Send("{y up}")
+    Send("{w up}")
     Send("{x up}")
-    Send("{x down}")
     Send("{x up}")
+    Sleep 50
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
     Send("{x up}")
+    Send("{x up}")
+    Sleep 3
     Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
+    Send("{x up}")
+    Sleep 3
+    Send("{x down}")
+    Send("{x down}")
+    Sleep 147
+    Send("{x up}")
     Send("{x up}")
     Sleep 3
     Send("{w down}")
+    Send("{x down}")
+    Send("{x down}")
     Sleep 1125
     Send("{w up}")
+    Send("{x up}")
+    Send("{x up}")
 }

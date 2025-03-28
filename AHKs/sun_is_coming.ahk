@@ -4,8 +4,7 @@ SendMode "Input"
 SetWorkingDir A_ScriptDir
 
 ~::PlaySong()
-
-Hotkey "Esc", (*) => ExitApp()
+Esc::ExitApp()
 
 PlaySong() {
     Send("{2 down}")
@@ -26,84 +25,180 @@ PlaySong() {
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{6 down}")
+    Sleep 222
+    Send("{6 up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
     Send("{e down}")
     Sleep 222
     Send("{e up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
-    Send("{h down}")
-    Sleep 222
-    Send("{h up}")
     Send("{3 down}")
     Sleep 222
     Send("{3 up}")
     Send("{h down}")
     Sleep 222
     Send("{h up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{h down}")
     Sleep 222
     Send("{h up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
+    Send("{h down}")
+    Sleep 222
+    Send("{h up}")
+    Send("{6 down}")
+    Sleep 222
+    Send("{6 up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
     Send("{g down}")
     Sleep 222
     Send("{g up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
     Send("{g down}")
     Sleep 222
     Send("{g up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
     Send("{g down}")
     Sleep 222
     Send("{g up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{3 down}")
+    Sleep 7
+    Send("{3 up}")
     Sleep 215
     Send("{2 down}")
     Sleep 222
@@ -123,82 +218,178 @@ PlaySong() {
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{6 down}")
+    Sleep 222
+    Send("{6 up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
     Send("{e down}")
     Sleep 222
     Send("{e up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
+    Send("{2 down}")
+    Sleep 222
+    Send("{2 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{n down}")
     Sleep 222
     Send("{n up}")
-    Send("{h down}")
-    Sleep 222
-    Send("{h up}")
     Send("{3 down}")
     Sleep 222
     Send("{3 up}")
     Send("{h down}")
     Sleep 222
     Send("{h up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{h down}")
     Sleep 222
     Send("{h up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
+    Send("{h down}")
+    Sleep 222
+    Send("{h up}")
+    Send("{6 down}")
+    Sleep 222
+    Send("{6 up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{e down}")
+    Sleep 222
+    Send("{e up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{3 down}")
+    Sleep 222
+    Send("{3 up}")
     Send("{g down}")
     Sleep 222
     Send("{g up}")
     Send("{2 down}")
     Sleep 222
     Send("{2 up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
     Send("{g down}")
     Sleep 222
     Send("{g up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
     Send("{g down}")
     Sleep 222
     Send("{g up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
+    Send("{y down}")
+    Sleep 222
+    Send("{y up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{u down}")
+    Sleep 222
+    Send("{u up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{5 down}")
+    Sleep 222
+    Send("{5 up}")
     Send("{m down}")
     Sleep 222
     Send("{m up}")
+    Send("{3 down}")
+    Sleep 7
+    Send("{3 up}")
 }
