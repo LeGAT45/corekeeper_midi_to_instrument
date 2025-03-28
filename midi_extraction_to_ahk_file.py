@@ -1,7 +1,8 @@
 import umidiparser
+import gmfunctions
 
 # Configuration
-file_name = "In the hall of the Mountain King.mid"
+file_name = "SMASH MOUTH.All star.mid"
 midi_to_key = {
     48: "z", 49: "s", 50: "x", 51: "d", 52: "c", 53: "v", 54: "g",
     55: "b", 56: "h", 57: "n", 58: "j", 59: "m", 60: "q", 61: "2",
@@ -24,12 +25,10 @@ def transpose_note(note, midi_to_key):
     if candidates:
         # Find closest octave match
         closest = min(candidates, key=lambda x: abs(x - note))
-        print(f"Transposed {note} → {closest} (preserved pitch class)")
         return closest
     else:
         # Fallback to nearest note if exact pitch class unavailable
         closest = min(playable_notes, key=lambda x: abs(x - note))
-        print(f"Transposed {note} → {closest} (nearest available)")
         return closest
 
 
@@ -38,6 +37,8 @@ mf = umidiparser.MidiFile(file_name)
 channels = {}  # {channel_num: [notes]}
 current_time_us = 0  # Track cumulative time in microseconds
 
+program_changes = {}
+
 for event in mf:
     current_time_us += event.delta_us
 
@@ -45,6 +46,9 @@ for event in mf:
         event_type = 'note_on'
     elif event.status == umidiparser.NOTE_OFF or (event.status == umidiparser.NOTE_ON and event.velocity == 0):
         event_type = 'note_off'
+    elif event.status == umidiparser.PROGRAM_CHANGE:
+        program_changes[event.channel] = event.program
+        continue
     else:
         continue
 
@@ -65,17 +69,33 @@ for event in mf:
         'channel': channel
     })
 
-# Show channel statistics
-print("\nAvailable Channels (Channel: Event Count):")
+channel_info = {}
+
+for channel in range(16):  # MIDI has 16 channels (0-15)
+    if channel == 9:  # Channel 10 (percussion)
+        channel_info[channel] = "Percussion (Drums)"
+    elif channel in program_changes:
+        program_num = program_changes[channel]
+        instrument = gmfunctions.program_name(program_num)  # Use GM helper
+        channel_info[channel] = f"Melodic ({instrument})"
+    else:
+        channel_info[channel] = "Melodic (No Program Change)"
+
+print("\nAvailable Channels (Channel: Event Count - Role):")
 for channel in sorted(channels.keys()):
     notes = channels[channel]
-    print(f"  {channel}: {len(notes)} events")
+    role = channel_info.get(channel, "Unknown")
+    print(f"  {channel}: {len(notes)} events - {role}")
 
-    # Show transposition summary for this channel
-    transposed = [n for n in notes if n['original_note'] != n['note']]
-    if transposed:
-        examples = ", ".join(f"{n['original_note']}→{n['note']}" for n in transposed[:3])
-        print(f"    * Transposed {len(transposed)} notes (e.g., {examples})")
+    # Show drum note names for Channel 10
+    if channel == 9:
+        drum_notes = set(n['original_note'] for n in notes)
+        print("    * Drum notes detected:")
+        for note in sorted(drum_notes):
+            try:
+                print(f"      {note}: {gmfunctions.percussion_name(note)}")  # Use GM helper
+            except KeyError:
+                print(f"      {note}: Unknown drum")
 
 # User selects channels
 selected = input("\nEnter channels to include (comma-separated): ").strip()
@@ -141,4 +161,3 @@ with open(output_file, "w") as f:
     f.write(generate_ahk_script(notes_ms, midi_to_key))
 
 print(f"\nSuccess! Generated AHK script: {output_file}")
-print("Note: Check the transposition log above if notes were adjusted")
