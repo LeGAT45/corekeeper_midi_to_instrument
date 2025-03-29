@@ -7,6 +7,7 @@ SetWorkingDir A_ScriptDir
 Esc::ExitApp()
 
 PlaySong() {
+    Sleep 15652
     Send("{b down}")
     Sleep 130
     Send("{b up}")
